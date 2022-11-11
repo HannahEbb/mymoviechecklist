@@ -7,7 +7,7 @@ export default function handleErrorsMiddleware(
   res: Response,
   next: NextFunction
 ) {
-  console.log('Ooops! An error occured!', err);
+  console.log('An error occured!', err);
 
   if (isAppError(err)) {
     const statusCode = errorTypeToStatusCode(err.type);
