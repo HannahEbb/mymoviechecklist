@@ -10,4 +10,4 @@ const authRouter = Router();
 authRouter.post('/sign-up', schemaValidator(signUpSchema), signUp);
 authRouter.post('/sign-in', schemaValidator(signInSchema), signIn);
 
-export default authRouter;
+export default authRouter; 

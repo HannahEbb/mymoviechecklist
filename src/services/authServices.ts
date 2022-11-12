@@ -29,7 +29,7 @@ export async function login(signInData: IAuthData) {
         throw { type: 'unauthorized', message: 'Incorrect email or password!!' };
     }
 
-    const SECRET: string = process.env.JWT_KEY ?? '';
+    const SECRET: string = process.env.JWT_SECRET ?? '';
     const EXPIRES_IN = process.env.EXPIRES_IN;
 
     const payload = {

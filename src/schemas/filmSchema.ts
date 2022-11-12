@@ -1,7 +1,6 @@
 import joi from "joi";
-import { IFilmData } from "../types/filmTypes";
 
-const filmSchema = joi.object<IFilmData>({
+const filmSchema = joi.object({
     name: joi.string().required().messages({
         "any.required": "Você deve informar um nome!"
     }),

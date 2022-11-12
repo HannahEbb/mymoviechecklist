@@ -11,12 +11,12 @@ export function tokenValidator(req: Request, res: Response, next: NextFunction) 
     } 
 
     const token: string = auth.split(' ')[1];
-    const SECRET: string = process.env.JWT_KEY ?? '';
+    const SECRET: string = process.env.JWT_SECRET ?? '';
 
   try {
     jwt.verify(token, SECRET);
     const tokenData: any = jwt.verify(token, SECRET);
-    res.locals.userId = tokenData.userId;
+    res.locals.user = tokenData.userId;
     next();
   } catch (error) {
     return res.status(400).send('Invalid token!');
