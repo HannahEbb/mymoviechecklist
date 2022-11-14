@@ -1,5 +1,7 @@
 # mymoviechecklist
 
+Trata-se de uma API para listar e avaliar filmes de diferetes plataformas de 'streaming'.
+
 ## AVISO INICIAL
 
 Para quem usa extensão ThunderClient para testar a API, uma 'collection' se encontra na raiz do projeto como 'thunder-collection_myMovieCheckList.json'.
